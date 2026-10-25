@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "package": "swift-ai-typesafe-ai",
+  "status": "coarse-import",
+  "upstream": [
+    {
+      "name": "@ai-sdk/typesafe-ai",
+      "implementation": [
+        "packages/typesafe-ai/src"
+      ],
+      "tests": [
+        "packages/typesafe-ai/src/lazy-schemas.test.ts",
+        "packages/typesafe-ai/src/typesafe-ai-decision-model.test.ts",
+        "packages/typesafe-ai/src/typesafe-ai-provider.test.ts"
+      ]
+    }
+  ],
+  "swift": {
+    "sources": [
+      "Sources/SwiftAITypeSafeAI/TypeSafeAIProviderSettings.swift",
+      "Sources/SwiftAITypeSafeAI/TypesafeAIDecisionModel.swift",
+      "Sources/SwiftAITypeSafeAI/TypesafeAIDecisionOptions.swift",
+      "Sources/SwiftAITypeSafeAI/TypesafeAIEvaluationModel.swift",
+      "Sources/SwiftAITypeSafeAI/TypesafeAIProvider.swift"
+    ],
+    "tests": [
+      "Tests/SwiftAITypeSafeAITests/FixtureDownloadTransport.swift",
+      "Tests/SwiftAITypeSafeAITests/TestSupport.swift",
+      "Tests/SwiftAITypeSafeAITests/TypeSafeAIDecisionCompatibilityTests.swift",
+      "Tests/SwiftAITypeSafeAITests/TypesafeAIProviderTests.swift"
+    ],
+    "resources": []
+  },
+  "differences": [
+    {
+      "kind": "native-adaptation",
+      "reason": "Preserve Swift async/await, Sendable, Foundation transport and existing documented gaps; see Docs/CoreV6Parity.md and PortingStatus.md."
+    }
+  ],
+  "reviewNote": "M6: TypeSafe Decision and legacy Evaluation runtime, lazy authentication and focused suites extracted. Prior baselines, aliases and documented gaps retained.",
+  "canonicalOnlyReferences": [],
+  "canonicalDirectory": "Packages/swift-ai-typesafe-ai"
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "packages": [
+    {
+      "name": "@ai-sdk/typesafe-ai",
+      "reviewedVersion": "3.0.27",
+      "ledgerKind": "provider",
+      "evidence": "`AIProviders.typeSafeAI`, `TypeSafeAIProvider`, `TypeSafeAIEvaluationModel`, `TypeSafeAIDecisionModel`, `TypeSafeAIDecisionModelOptions`, `WeeklyCore20261018Tests.swift`, `TypesafeAIProviderTests.swift`, `DecisionProviderTests.swift`",
+      "reviewStatus": "imported-reviewed-with-gaps",
+      "archiveIntegrity": "sha512-56LBl9/6PkvafYQzgoEkK82yk0fZg5gR8pcvtR3hjP9m/p3yef8GZKEHdg8c31EdTrYG6koMO92biLyI5VX4Vg==",
+      "sourceRef": "npm:@ai-sdk/typesafe-ai@3.0.27",
+      "testRef": "682e2dd71456f14f9da33a1b983d1998c3a1184c",
+      "testRefRelationship": "inventory-snapshot-not-release-verified",
+      "contractFamilies": [],
+      "contractReview": "not-imported; inspect upstream declarations before extraction"
+    }
+  ]
+}
