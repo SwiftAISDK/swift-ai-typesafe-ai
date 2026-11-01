@@ -27,7 +27,8 @@
       "Tests/SwiftAITypeSafeAITests/FixtureDownloadTransport.swift",
       "Tests/SwiftAITypeSafeAITests/TestSupport.swift",
       "Tests/SwiftAITypeSafeAITests/TypeSafeAIDecisionCompatibilityTests.swift",
-      "Tests/SwiftAITypeSafeAITests/TypesafeAIProviderTests.swift"
+      "Tests/SwiftAITypeSafeAITests/TypesafeAIProviderTests.swift",
+      "Tests/SwiftAITypeSafeAITests/Weekly20261101CredentialsTests.swift"
     ],
     "resources": []
   },
