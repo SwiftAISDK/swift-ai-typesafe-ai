@@ -3,19 +3,19 @@
   "packages": [
     {
       "name": "@ai-sdk/typesafe-ai",
-      "reviewedVersion": "3.0.35",
+      "reviewedVersion": "3.0.40",
       "ledgerKind": "provider",
-      "evidence": "`AIProviders.typeSafeAI`, `TypeSafeAIProvider`, `TypeSafeAIEvaluationModel`, `TypeSafeAIDecisionModel`, `TypeSafeAIDecisionModelOptions`, `WeeklyCore20261018Tests.swift`, `TypesafeAIProviderTests.swift`, `DecisionProviderTests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json",
+      "evidence": "`AIProviders.typeSafeAI`, `TypeSafeAIProvider`, `TypeSafeAIEvaluationModel`, `TypeSafeAIDecisionModel`, `TypeSafeAIDecisionModelOptions`, `WeeklyCore20261018Tests.swift`, `TypesafeAIProviderTests.swift`, `DecisionProviderTests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json; 2026-11-14 delta: Docs/WeeklyUpstreamAudit20261114.json",
       "reviewStatus": "imported-reviewed-with-gaps",
-      "archiveIntegrity": "sha512-vmqj3uCrmlR+oUI1DMgxT7n7P8LmB11FSl4i5ErGUqMrnp7PSVw3rD0A8oxNHezNU1zBvX0b8gdY/50EgiiCMA==",
-      "sourceRef": "npm:@ai-sdk/typesafe-ai@3.0.35",
-      "testRef": "0f3a85f92d1ce06ccde01d662407ef83e097a712",
+      "archiveIntegrity": "sha512-IALJV4gyHaL+8nHHv5ZUO2+dNf7q3cG/RN8MktKWkyYtzYFQBs2qq07GUzs1oALkcdhgTQY8N/ZBy2MVGylQUg==",
+      "sourceRef": "npm:@ai-sdk/typesafe-ai@3.0.40",
+      "testRef": "8bc7652cdb13fc84722666eb93f45acd0d131eee",
       "testRefRelationship": "matching-release",
       "contractFamilies": [
         "DecisionModelV4",
         "ProviderV4"
       ],
-      "contractReview": "2026-11-08: published declarations/source and exact matching-release changed tests reviewed; native implementations, per-file dispositions and broader retained gaps are recorded in Docs/WeeklyUpstreamAudit20261108.json. Reviewed delta is not full-package or live-service parity."
+      "contractReview": "2026-11-14: verified published source/declarations and exact matching-release changed tests reviewed separately; native ports, per-file dispositions and retained gaps are recorded in Docs/WeeklyUpstreamAudit20261114.json. Delta review is not full-package or live-service parity."
     }
   ]
 }
