@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "package": "swift-ai-typesafe-ai",
-  "version": "1.2.1",
-  "releaseID": "weekly-upstream-20261114",
+  "version": "1.3.0",
+  "releaseID": "upstream-parity-20261116",
   "source": {
-    "commit": "07fbf86b82d83d9724bd03622e9e87e74395286f",
-    "baseCommit": "07fbf86b82d83d9724bd03622e9e87e74395286f",
+    "commit": "1c457dea36be42376a6853aecd5c48ffc4942178",
+    "baseCommit": "1c457dea36be42376a6853aecd5c48ffc4942178",
     "workingTree": false,
-    "inputsSHA256": "63e472c0fe891cb7636d225e1c6467e4761dc3721be68081f2afa9f0b656bb29"
+    "inputsSHA256": "d7b8f52add7828d7e9ed20418fe072e7db03e75483a168bb7f5c34e9d2a04a13"
   },
   "dependencies": [
     {
@@ -17,9 +17,9 @@
   ],
   "changes": [
     {
-      "id": "weekly-upstream-20261114",
-      "notes": "Refresh the versioned request identity while retaining the current native request, response and stream behavior. Internal upstream model-catalog reorganizations preserve the existing native policies. Reviewed npm delta: @ai-sdk/typesafe-ai 3.0.35 to 3.0.40. Validation: `node Scripts/test-packages.mjs` passed all 52 owning suites and 1731 facade tests; tooling 27/27, generation/isolation checks, standalone exports and 106 minimum/latest consumers, documentation check and 101-page build passed. Publication requires green exact-source Swift 6.3.3 CI. Paid/live verification and full-package parity are not claimed.",
-      "compatibility": "Compatible behavior/header correction. Original public selectors are preserved. npm baselines and Swift SemVer are independent; this reviewed delta does not establish full-package or live-service parity."
+      "id": "upstream-parity-20261116",
+      "notes": "`null` assets and instructions are no longer sent; warning order, error messages and raw bodies match upstream; `TYPESAFE_AI_BASE_URL` is honoured and the evaluation model reports `typesafe.decision`.",
+      "compatibility": "Source-compatible; changes are additive. Request bodies, results, warnings and errors change to match the reviewed upstream package."
     }
   ],
   "canonicalDirectory": "Packages/swift-ai-typesafe-ai",
@@ -28,7 +28,7 @@
       "name": "@ai-sdk/typesafe-ai",
       "reviewedVersion": "3.0.40",
       "ledgerKind": "provider",
-      "evidence": "`AIProviders.typeSafeAI`, `TypeSafeAIProvider`, `TypeSafeAIEvaluationModel`, `TypeSafeAIDecisionModel`, `TypeSafeAIDecisionModelOptions`, `WeeklyCore20261018Tests.swift`, `TypesafeAIProviderTests.swift`, `DecisionProviderTests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json; 2026-11-14 delta: Docs/WeeklyUpstreamAudit20261114.json",
+      "evidence": "`AIProviders.typeSafeAI`, `TypeSafeAIProvider`, `TypeSafeAIEvaluationModel`, `TypeSafeAIDecisionModel`, `TypeSafeAIDecisionModelOptions`, `WeeklyCore20261018Tests.swift`, `TypesafeAIProviderTests.swift`, `DecisionProviderTests.swift`; 2026-11-01 delta: Docs/Archive/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/Archive/WeeklyUpstreamAudit20261108.json; 2026-11-14 delta: Docs/Archive/WeeklyUpstreamAudit20261114.json",
       "reviewStatus": "imported-reviewed-with-gaps",
       "archiveIntegrity": "sha512-IALJV4gyHaL+8nHHv5ZUO2+dNf7q3cG/RN8MktKWkyYtzYFQBs2qq07GUzs1oALkcdhgTQY8N/ZBy2MVGylQUg==",
       "sourceRef": "npm:@ai-sdk/typesafe-ai@3.0.40",
@@ -38,7 +38,7 @@
         "DecisionModelV4",
         "ProviderV4"
       ],
-      "contractReview": "2026-11-14: verified published source/declarations and exact matching-release changed tests reviewed separately; native ports, per-file dispositions and retained gaps are recorded in Docs/WeeklyUpstreamAudit20261114.json. Delta review is not full-package or live-service parity."
+      "contractReview": "2026-11-14: verified published source/declarations and exact matching-release changed tests reviewed separately; native ports, per-file dispositions and retained gaps are recorded in Docs/Archive/WeeklyUpstreamAudit20261114.json. Delta review is not full-package or live-service parity."
     }
   ],
   "note": "Independent port. Imported test refs and contract review gaps retain their original status; export is not new upstream parity proof.",
@@ -57,11 +57,11 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Porting/map.json",
-      "sha256": "a44e47068dbfcfecf9157ed0da1245d6962c6d4011748997d4bbc9600112e531"
+      "sha256": "9cddaad6da0493c7780dbcdd03b3a6c7fa1def37edee1dc90ee0794466f4cf30"
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/README.md",
-      "sha256": "81d11d12f42908a0b2421b7fd8423fceb9508338c832037071b3c31d859ed223"
+      "sha256": "fc46566217c0c6744de7a80e0b1d3e5ef855a0d032061af381aa270eaf0f29b2"
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Sources/SwiftAITypeSafeAI/TypeSafeAIProviderSettings.swift",
@@ -69,11 +69,11 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Sources/SwiftAITypeSafeAI/TypesafeAIDecisionModel.swift",
-      "sha256": "03e342c46418ea850dc0d7bf68e82269d24f354a150eba0dfb1d1fde514e37eb"
+      "sha256": "b92b92eace2078c8685036e55e667c95147bb2ee09b92be095da0ce8d2dbca1c"
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Sources/SwiftAITypeSafeAI/TypesafeAIDecisionOptions.swift",
-      "sha256": "733a04fc735e55250710af108a00d93539a92ae6a07c61926775dd8e048b5941"
+      "sha256": "357058dfd8a47b5b39c857eae001f79d201363d786fc34acc11d70c8a27fe75d"
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Sources/SwiftAITypeSafeAI/TypesafeAIEvaluationModel.swift",
@@ -81,7 +81,7 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Sources/SwiftAITypeSafeAI/TypesafeAIProvider.swift",
-      "sha256": "1b848d2564a83152e8ab89e9fa1d228a5e1750ef726e3cf75e66cccd1b791d7b"
+      "sha256": "4229bb155e9f180a27a895d6062e1ebcaa101d012e6b920e28f16494cd87c5a9"
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Tests/SwiftAITypeSafeAITests/FixtureDownloadTransport.swift",
@@ -96,16 +96,20 @@
       "sha256": "8146350fbe6861a8ff487ca019dc737ad73dad5a0208ffe97a127a246c654b85"
     },
     {
+      "canonicalPath": "Packages/swift-ai-typesafe-ai/Tests/SwiftAITypeSafeAITests/TypeSafeAIUpstreamParityTests.swift",
+      "sha256": "e2e609c4682db330f24195f63ed25810c083d92736e0b3082fe0d6fa23fa5ee7"
+    },
+    {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Tests/SwiftAITypeSafeAITests/TypesafeAIProviderTests.swift",
-      "sha256": "1a500aeb5b1721a06ac07d9ab6b93f0d021aa7fd6dd8ba84c64b8650686a867c"
+      "sha256": "c6690976c99f2dfc650b1828139f0e2c3eb75de66abc148cb0c3cff9f0e0483a"
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Tests/SwiftAITypeSafeAITests/Weekly20261101CredentialsTests.swift",
-      "sha256": "58d1d355a349e7d5ec8927ee61029406066ee8942b7b1021e2597b7c1dec18f8"
+      "sha256": "b9dabfc7d9c2af446c0db201fe0087d85fbf8f644685583f90c7f22f519c3371"
     },
     {
       "canonicalPath": "Packages/swift-ai-typesafe-ai/Tests/SwiftAITypeSafeAITests/Weekly20261108DecisionTests.swift",
-      "sha256": "d5b6074cf3db900caa6c0e68222bfae5cc28badee4a94cb630def15be3910f4d"
+      "sha256": "23466afc86dd09c532650721c276b4eb0d91edc9998ee04520fcf6dcdf630c42"
     }
   ]
 }
